@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container, Navbar, Nav , Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Header.css';
 
 const Header = () => {
+    const {user , logOut} = useAuth();
     return (
         /* 
         ---------------------------
@@ -20,10 +22,16 @@ const Header = () => {
                 <Nav className="me-auto fw-bold">
                 <Nav.Link><Link to="/home" className="text-decoration-none text-opacity-75 text-light">Home</Link></Nav.Link>
                 <Nav.Link><Link to="/services" className="text-decoration-none text-opacity-75 text-light">Services</Link></Nav.Link>
+                <Nav.Link><Link to="/doctors" className="text-decoration-none text-opacity-75 text-light">Doctors</Link></Nav.Link>
                 <Nav.Link><Link to="/about" className="text-decoration-none text-opacity-75 text-light">About Us</Link></Nav.Link>
                 <Nav.Link><Link to="/contact" className="text-decoration-none text-opacity-75 text-light">Contact</Link></Nav.Link>
-                <Link to="/login"><Button className="mx-3 fw-bold" variant="primary">Login</Button></Link>
-                <Link to="/register"><Button className="fw-bold" variant="outline-info text-light">Register</Button></Link>
+                {   
+                    !user.email 
+                    ? <div><Link to="/login"><Button className="mx-3 fw-bold" variant="primary">Login</Button></Link>
+                    <Link to="/register"><Button className="fw-bold" variant="outline-info text-light">Register</Button></Link></div>
+                    : <span className="text-info"><i class="far fa-user"></i> {user.displayName} <Button onClick={logOut} className="fw-bold" variant="outline-danger text-light">Logout</Button></span>
+                    
+                }
                 </Nav>
                 </div>
                 </Container>

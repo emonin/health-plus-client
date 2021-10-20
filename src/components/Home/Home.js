@@ -15,21 +15,21 @@ const Home = () => {
         <div className="container">
             <section className="mt-5 shadow-lg rounded p-4 bg-white">
                     <Carousel>
-                        <Carousel.Item interval={3000}>
+                        <Carousel.Item interval={2000}>
                             <img
                             className="d-block my-0 mx-auto w-100 img-fluid border rounded"
                             src="https://i.ibb.co/mDJxDwS/img-1.png"
                             alt="First slide"
                             />
                         </Carousel.Item>
-                        <Carousel.Item interval={3000}>
+                        <Carousel.Item interval={2000}>
                             <img
                             className="d-block my-0 mx-auto w-100 img-fluid border rounded"
                             src="https://i.ibb.co/FHQHVs8/img-2.png"
                             alt="Second slide"
                             />
                         </Carousel.Item>
-                        <Carousel.Item  interval={3000}>
+                        <Carousel.Item  interval={2000}>
                             <img
                             className="d-block my-0 mx-auto w-100 img-fluid border rounded"
                             src="https://i.ibb.co/1bf5vT3/img-3.png"

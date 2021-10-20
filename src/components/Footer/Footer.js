@@ -13,12 +13,9 @@ const Footer = () => {
             <div className="container mt-5">
             <Row xs={1} md={4} className="g-3">
                 <Col className="col-3">
+                    <p className="text-light">Important Links</p>
                     <p>
                     <Link to="/services" className="text-decoration-none text-opacity-50 text-light">Services</Link></p>
-                    <p><Link to="/courses" className="text-decoration-none text-opacity-50 text-light">Courses</Link></p>
-                    <p><Link to="/exam" className="text-decoration-none text-opacity-50 text-light">Exams</Link></p>
-                    <p><Link to="/library" className="text-decoration-none text-opacity-50 text-light">Library</Link></p>
-                    <p><Link to="/culture" className="text-decoration-none text-opacity-50 text-light">Culture</Link></p>
                     <p><Link to="/about" className="text-decoration-none text-opacity-50 text-light">About Us</Link></p>
                     <Link to="/contact" className="text-decoration-none text-opacity-50 text-light">Contact</Link>
                 </Col>
@@ -30,13 +27,19 @@ const Footer = () => {
                 </Col>
                 <Col className="col-3">
                     <p className="text-light">Follow us</p>
-                    <p><Link className="text-decoration-none text-opacity-50 text-light" to=""><i class="fab fa-facebook-square"></i> Facebook</Link></p>
-                    <p><Link className="text-decoration-none text-opacity-50 text-light" to=""><i class="fab fa-twitter-square"></i> Twitter</Link></p>
+                    <p><Link className="text-decoration-none text-opacity-50 text-light" to=""><i className="fab fa-facebook-square"></i> Facebook</Link></p>
+                    <p><Link className="text-decoration-none text-opacity-50 text-light" to=""><i className="fab fa-twitter-square"></i> Twitter</Link></p>
                 </Col>
                 <Col className="col-3">
-                    <p className="text-light">Download the Official App</p>
-                    <p><Link className="text-decoration-none text-opacity-50 text-light" to=""><i class="fab fa-google-play"></i> Google Play</Link></p>
-                    <p><Link className="text-decoration-none text-opacity-50 text-light" to=""><i class="fab fa-app-store-ios"></i> App Store</Link></p>
+                    <p className="text-light"><i className="fas fa-phone"></i> Phone</p>
+                    <p className="text-opacity-50 text-light">+88 123-456-7890</p>
+                    <p className="text-light"><i className="fas fa-map-marker-alt"></i> Address</p>
+                    <p className="text-opacity-50 text-light">123 Anywhere,
+                    <br />
+                    Any City,
+                    <br />
+                    ST-12345
+                    </p>
                 </Col>
             </Row>
             </div>

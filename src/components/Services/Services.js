@@ -13,7 +13,7 @@ const Services = () => {
     },[]);
     return (
         <section className="container">
-            <h2 className="text-primary fw-bold my-5">All Healthcare Services</h2>
+            <h1 className="text-primary fw-bold my-5">All Healthcare Services</h1>
             <div className="bg-white shadow-lg rounded p-4">
             <Row xs={1} md={3} className="g-4">
                 {

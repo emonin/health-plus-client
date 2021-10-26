@@ -2,3 +2,41 @@
 {
     background-image: linear-gradient(to right, #01c3cc , #2b90d6 , #4e64dd , #3f21d4, #30198b);
 }
+
+.hover-line {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+.hover-line:before, .hover-line:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    top: 100%;
+    background: #1fb2e8;
+  }
+  
+  .hover-line:before {
+    left: -.5px;
+  }
+  .hover-line:after {
+    right: 2.5px;
+    background: #1fb2e8;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .hover-line:hover:before {
+    background: #1fb2e8;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .hover-line:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+  
+  

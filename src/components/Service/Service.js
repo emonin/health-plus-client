@@ -3,7 +3,7 @@ import { Card, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-    const { name , desc , img } = props.service;
+    const { name , desc , img , key } = props.service;
     return (
         <Col>
             <Card className="shadowhover h-100">
@@ -11,7 +11,7 @@ const Service = (props) => {
                 <Card.Body>
                 <Card.Title className="fw-bold text-primary">{name}</Card.Title>
                 <Card.Text className="text-secondary">{desc.slice(0 , 150)} . . .</Card.Text>
-                <Link to="/login"><Button className="" variant="primary">More Details</Button></Link>
+                <Link to={key}><Button className="" variant="primary">More Details</Button></Link>
                 </Card.Body>
             </Card>
         </Col>

@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "health-plus-emonin"
-  }
+    "default": "health-plus-emonin",
+    "build": "health-plus-emonin"
+  },
+  "targets": {}
 }

@@ -11,7 +11,7 @@ const Footer = () => {
         */
         <div className="bg-dark py-3 mt-5">
             <div className="container mt-5">
-            <Row s={1} md={2} lg={4} className="g-3">
+            <Row xs={1} sm={1} md={2} lg={4} className="g-3">
                 <Col className="col-3">
                     <p className="text-light">Important Links</p>
                     <p>
